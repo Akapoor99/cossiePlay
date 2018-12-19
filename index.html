@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CossiePlay</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	
+	<!----------------------- HOME ----------------------->
+	<div id="home" class="main_container">
+		<div id="top" class="main_header">
+			<div class="caption">
+				<span class="border font-effect-outline">CossiePlay</span>
+				<!--<br>
+				<h5>SINCE 2012</h5>-->
+			</div>
+		
+			<div id="navbar">
+				<a href="#home">
+    				<h4 class="logo font-effect-anaglyph">CP</h4>
+    			</a>
+    			<nav>
+      				<ul>
+        				<li>
+							<div class="dropdown">
+								<button class="dropbtn-active">
+									Home<i class="fa fa-caret-down"></i>
+								</button>
+								<div class="dropdown-content">
+									<a href="#home">Home</a>
+									<a href="#announcemnets">Announcemnets</a>
+									<a href="#wcp">What is CossiePlay ?</a>
+								</div>
+							</div> 
+						</li>
+						
+        				<li>
+							<div class="dropdown">
+								<button class="dropbtn">
+									About us<i class="fa fa-caret-down"></i>
+								</button>
+								<div class="dropdown-content">
+									<a href="about-us.html#about">About Us</a>
+									<a href="about-us.html#contactUs">Contact Us</a>
+								</div>
+							</div>
+						</li>
+						
+        				<li>
+							<div class="dropdown">
+								<button class="dropbtn">
+									Coustumes<i class="fa fa-caret-down"></i>
+								</button>
+								<div class="dropdown-content">
+									<a href="pricing.html#coustume">Coustumes</a>
+									<a href="pricing.html#pricing">Pricing</a>
+								</div>
+							</div>
+						</li>
+						
+        				<li>
+							<div class="dropdown">
+								<button class="dropbtn">
+									Plan <i class="fa fa-caret-down"></i>
+								</button>
+								<div class="dropdown-content">
+									<a href="plan.html">Plan</a>
+								</div>
+							</div>
+						</li>
+						
+        				<li>
+							<div class="dropdown">
+								<button class="signUpbtn">
+									Sign-up
+								</button>
+							</div>
+						</li>
+      				</ul>
+    			</nav>
+  			</div>
+		</div>
+	</div>
+	<!--------------------------------------------------------------->
+	
+	<!----------------------- ANNOUNCEMNETS ----------------------->
+	<div id="announcemnets" class="announcements_container">
+		<h3 class="ann_heading">Announcements</h3>
+		
+		<div class="announcements_content">
+			<hr/>
+			<div class="announcement">
+				This month you can purchase 3 drinks for the price of 2 at the bar.
+			</div>
+			<hr/>
+			<div class="announcement">
+				First-time party-goers get a 50% discount on entry.
+			</div>
+			<hr/>
+			<div class="announcement">
+				If you get a costume custom made, your next party entry is free if you wear that costume.
+			</div>
+			<hr/>
+			<div class="announcement">
+				Wear your costume in to KFC on Stanton street and you can get a free drink with a 21-piece bucket. Tell them you’ve been to CossiePlay!
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------------------------------->
+	
+	
+	<!----------------------- WHAT IS COSPLAY ----------------------->
+	<div id="wcp" class="wcp_container">
+		
+		<div class="wcp_heading">
+			<img src="images/alice-in-wonderland-872612_1280.jpg" alt="right_aligned_PHOTO" class="right fifty">
+			<div class="fifty">
+				<h2 class="wcp_header">What Is CosPlay ?</h2>
+				<p class="wcp_content">
+					Cosplay, a portmanteau of the words costume play, is a performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character. Cosplayers often interact to create a subculture and a broader use of the term "cosplay" applies to any costumed role-playing in venues apart from the stage. Any entity that lends itself to dramatic interpretation may be taken up as a subject and it is not unusual to see genders switched. Favorite sources include manga and anime, comic books and cartoons, video games, and live-action films and television series.<br/><br/>
+					The rapid growth in the number of people cosplaying as a hobby since 1990 has made the phenomenon a significant aspect of popular culture in Japan and some other parts of Asia and in the Western world. Cosplay events are common features of fan conventions and there are also dedicated conventions and local and international competitions, as well as social networks, websites and other forms of media centered on cosplay activities.<br/><br/>
+				
+					Reproduced from <a href="https://en.wikipedia.org/wiki/Cosplay">https://en.wikipedia.org/wiki/Cosplay</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------------------------------->
+	
+	
+	
+	<!-- ******** FOOTER ******** -->
+	
+	<footer>
+		<span>Copyright @ 2018 CossiePlay. All Rights Reserverd</span>
+		<span>Terms of Use | Privacy Policy</span>
+	</footer>
+	<!-- ********************** -->
+	
+	
+	
+	<!-- ************ JAVASCRIPT ************* -->
+	<!--<script src="js/main.js"></script>-->
+	<script>
+	// When the user scrolls the page, execute myFunction 
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop +10;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+  			if (window.pageYOffset > sticky) {
+    			navbar.classList.add("sticky");
+  			} else {
+    			navbar.classList.remove("sticky");
+  			}
+		}
+		
+		function showSignUp(){
+			var signUpForm = document.getElementById("signUp");
+			signUpForm.classList.remove("hide");
+		}
+		
+		function hideSignUp(){
+			var signUpForm = document.getElementById("signUp");
+			signUpForm.classList.add("hide");
+		}
+	</script>
+	
+	
+	
+	<div id="signUp" class="hide signUp_Container">
+		<div class="signup_formContainer">
+				<i class="close fas fa-times-circle" onClick="hideSignUp()"></i>
+			<h1> Sign - Up</h1>
+			<div class="signUp_content">
+				<h4>Enter your contact details</h4>
+				<div class="form_line">Enter your name:<br/>
+					<div class="form_subline">
+						First Name * <input type="text" name="firstname" value="">
+					</div>
+					<div class="form_subline">
+						Last Name * <input type="text" name="lastname" value="">
+					</div>
+				</div>
+				<div class="form_line">Where can we reach you at ?<br/>
+					<div class="form_subline">
+						Mobile Number * <input type="text" name="mobileNumber" value="">
+					</div>
+				</div>
+				<div class="form_line">Tell us about your team ?<br/>
+					<div class="form_subline">
+						Number of people coming * <input type="number" name="mobileNumber" value="">
+					</div>
+				</div>
+				<div class="form_line">
+						I have read and understood the part guidlines * <input type="checkbox" name="mobileNumber" value="">
+				</div>
+				<div class="form_line">
+					<input type="submit" name="submit" value="Submit" class="submit">
+				</div>
+			</div>
+			<div class="sign-Up guidlines">
+				<h4> Party Guidlines</h4>
+				<p>
+					<ul>
+						<li>CossiePlay party-goers party at their own risk and are responsible for their own safety. Check with your doctor before you party hard.</li>
+						<li>Party fees must be paid at the door. Cash or EFTPOS accepted. Credit card payments attract a 2% surcharge.</li>
+						<li>Alcohol is served at the bar to over 18s only.</li>
+						<li>No intoxicated persons will be served, but will be escorted to a taxi – paid by the party-goer.</li>
+				</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
